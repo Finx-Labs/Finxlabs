@@ -27,8 +27,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // page transition
 let contact = document.getElementById("cta-link");
+let enquire = document.getElementById("enquire");
 
 contact.addEventListener('click', () => {
+    document.body.style.opacity = "0";
+    document.location = "./contact-us.html";
+})
+
+enquire.addEventListener('click', () => {
     document.body.style.opacity = "0";
     document.location = "./contact-us.html";
 })
