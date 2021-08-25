@@ -59,5 +59,6 @@ if (localStorage.getItem("section") === null) {
         document.getElementById(scroll).scrollIntoView({
             behavior: 'smooth'
         });
+        localStorage.removeItem("section");
     }, 500);
 }
