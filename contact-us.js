@@ -42,3 +42,24 @@ brandBottom.addEventListener('click', () => {
 let year = document.getElementById('year');
 let currYear = new Date().getFullYear();
 year.innerHTML = currYear;
+
+
+// local storage
+document.getElementById("about-finxlabs-link").addEventListener('click', () => {
+    window.localStorage.setItem("section", "why-finx-section-start");
+    window.location = "./index.html"
+})
+document.getElementById("why-gift-link").addEventListener('click', () => {
+    window.localStorage.setItem("section", "gift-section-start");
+    window.location = "./index.html"
+})
+document.getElementById("our-offering-link").addEventListener('click', () => {
+    window.localStorage.setItem("section", "offerings-section-start");
+    window.location = "./index.html"
+})
+document.getElementById("our-associations-link").addEventListener('click', () => {
+    window.localStorage.setItem("section", "association-section-start");
+    window.location = "./index.html"
+})
+
+// window.localStorage.setItem("section", "permit");
