@@ -41,3 +41,17 @@ window.onload = () => {
 let year = document.getElementById('year');
 let currYear = new Date().getFullYear();
 year.innerHTML = currYear;
+
+// local storage
+if (localStorage.getItem("section") === null) {
+
+} else {
+    let scroll = localStorage.getItem("section");
+
+
+    setTimeout(function () {
+        document.getElementById(scroll).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }, 500);
+}
